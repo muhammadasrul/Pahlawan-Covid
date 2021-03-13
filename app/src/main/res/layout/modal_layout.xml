@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#99000000"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_modal_bg">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/delapanbelas"
+            android:layout_marginBottom="@dimen/delapanbelas"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/mainFontColor"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            tools:text="Intetnet Banking"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:contentDescription="@string/app_name"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:id="@+id/tv_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/mainFontColor"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="@dimen/duaempat"
+            android:layout_marginEnd="@dimen/duaempat"
+            android:layout_marginBottom="@dimen/duaempat"
+            tools:text="lorem ipsum"/>
+    </LinearLayout>
+</LinearLayout>

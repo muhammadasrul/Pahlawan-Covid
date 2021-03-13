@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".ui.service.ServiceActivity">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edt_province"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/delapanbelas"
+        android:layout_marginStart="@dimen/delapanbelas"
+        android:layout_marginEnd="@dimen/delapanbelas"
+        android:drawableEnd="@drawable/ic_arrow_right"
+        android:background="@drawable/purple_stroke"
+        android:focusable="false"
+        android:hint="Provinsi"
+        android:paddingStart="@dimen/duaempat"
+        android:paddingEnd="@dimen/duaempat"
+        android:textColor="@color/mainFontColor"
+        android:textColorHint="@color/hintColor"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edt_city"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/delapanbelas"
+        android:layout_marginStart="@dimen/delapanbelas"
+        android:layout_marginEnd="@dimen/delapanbelas"
+        android:drawableEnd="@drawable/ic_arrow_right"
+        android:background="@drawable/purple_stroke"
+        android:focusable="false"
+        android:hint="City"
+        android:paddingStart="@dimen/duaempat"
+        android:paddingEnd="@dimen/duaempat"
+        android:textColor="@color/mainFontColor"
+        android:textColorHint="@color/hintColor"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/edt_province"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_city"
+        android:indeterminateTint="@color/endPurple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_city"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_data_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Data Kosong"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/mainFontColor"
+        app:layout_constraintTop_toBottomOf="@+id/edt_city"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/delapanbelas"
+        tools:listitem="@layout/service_item"
+        app:layout_constraintTop_toBottomOf="@id/edt_city"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.service.payment.DetailPaymentActivity">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/mainFontColor"
+                android:textSize="18sp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_marginTop="@dimen/delapanbelas"
+                android:layout_marginStart="@dimen/duaempat"
+                android:layout_marginEnd="@dimen/duaempat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Gunung Sari Medical" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/mainFontColor"
+                android:layout_marginStart="@dimen/duaempat"
+                android:layout_marginEnd="@dimen/duaempat"
+                tools:text="Jawa Tengah- Batang"
+                app:layout_constraintTop_toBottomOf="@id/tv_name"/>
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="@dimen/duaempat"
+                android:layout_marginEnd="@dimen/duaempat"
+                android:background="@color/mainFontColor"
+                app:layout_constraintTop_toBottomOf="@+id/tv_address"/>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="@dimen/duaempat"
+                android:layout_marginEnd="@dimen/duaempat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView12">
+
+                <ImageView
+                    android:id="@+id/img_rs"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/delapanbelas"
+                    android:layout_marginEnd="@dimen/delapanbelas"
+                    tools:src="@color/purple_500" />
+
+                <TextView
+                    android:id="@+id/tv_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/img_rs"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/mainFontColor"
+                    android:textSize="18sp"
+                    tools:text="Rapid Test Antigen" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_service"
+                    android:layout_toEndOf="@+id/img_rs"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/mainFontColor"
+                    android:textSize="24sp"
+                    tools:text="Rp 200.000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_date"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@drawable/purple_stroke"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="62dp"
+                android:layout_marginEnd="62dp"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout4">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginStart="@dimen/delapanbelas"
+                    android:src="@drawable/ic_calendar"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"/>
+
+                <TextView
+                    android:id="@+id/tv_service_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="Pilih tanggal pelayanan"
+                    android:textColor="@color/mainFontColor"
+                    android:textSize="18sp"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="@dimen/duaempat"
+                android:layout_marginEnd="@dimen/duaempat"
+                android:elevation="2dp"
+                app:cardCornerRadius="@dimen/duaempat"
+                app:layout_constraintTop_toBottomOf="@+id/btn_date"
+                tools:layout_editor_absoluteX="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/duaempat"
+                    android:paddingEnd="@dimen/duaempat"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Detail Pembayaran"
+                        android:textAlignment="center"
+                        android:textColor="@color/mainFontColor"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ID Registrasi"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/mainFontColor"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:id="@+id/tv_order_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="8234567"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/mainFontColor"
+                        android:textSize="24sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Metode Pembayaran"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/mainFontColor"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:id="@+id/tv_metode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="BRI"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/mainFontColor"
+                        android:textSize="24sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total Pembayaran"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/mainFontColor"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:id="@+id/tv_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Rp 200000"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/mainFontColor"
+                        android:textSize="24sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_pembayaran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Cara Pembayaran"
+                android:textColor="@color/mainFontColor"
+                android:textSize="18sp"
+                android:layout_marginTop="@dimen/duaempat"
+                android:layout_marginStart="@dimen/duaempat"
+                android:layout_marginEnd="@dimen/duaempat"
+                app:layout_constraintTop_toBottomOf="@+id/cardView5" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_atm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:paddingTop="12dp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/mainFontColor"
+                android:text="@string/atm_title"
+                android:textSize="18sp"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_pembayaran"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/duaempat"
+                android:layout_marginEnd="@dimen/duaempat"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_atm"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="4dp"
+                android:paddingTop="12dp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/mainFontColor"
+                android:text="@string/mobile_title"
+                android:textSize="18sp"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_atm"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/duaempat"
+                android:layout_marginEnd="@dimen/duaempat"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_mobile"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_internet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="4dp"
+                android:paddingTop="12dp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/mainFontColor"
+                android:text="@string/internet_title"
+                android:textSize="18sp"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_mobile"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/duaempat"
+                android:layout_marginEnd="@dimen/duaempat"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_internet"/>
+
+            <Button
+                android:id="@+id/btn_daftar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/purple_gradient"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Lihat status pembayaran"
+                android:textColor="@color/white"
+                android:layout_marginStart="72dp"
+                android:layout_marginEnd="72dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_internet"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

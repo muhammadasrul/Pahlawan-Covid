@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:context=".ui.vaccine.DetailVaksinasiActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/duaempat">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/endPurple"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_tahap1" />
+
+        <TextView
+            android:id="@+id/tv_tahap1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/delapanbelas"
+            android:fontFamily="@font/poppins"
+            android:text="Vaksinasi Tahap 1"
+            android:textAlignment="center"
+            android:textColor="@color/mainFontColor"
+            app:layout_constraintEnd_toStartOf="@id/tv_tahap2"
+            app:layout_constraintStart_toStartOf="@+id/cardView6"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_tahap2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/delapanbelas"
+            android:fontFamily="@font/poppins"
+            android:text="Vaksinasi Tahap 2"
+            android:textAlignment="center"
+            android:textColor="@color/mainFontColor"
+            app:layout_constraintEnd_toEndOf="@id/cardView6"
+            app:layout_constraintStart_toEndOf="@id/tv_tahap1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/delapanbelas"
+            app:cardCornerRadius="@dimen/delapanbelas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_tahap1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/delapanbelas">
+
+                <TextView
+                    android:id="@+id/semua"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="Semua Vaksinasi"
+                    android:textColor="@color/mainFontColor"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_semua1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/mainFontColor"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toStartOf="@id/tv_semua2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/semua"
+                    tools:text="972364" />
+
+                <TextView
+                    android:id="@+id/tv_dari_semua1"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/mainFontColor"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_semua1"
+                    tools:text="@string/semua_dosis" />
+
+                <TextView
+                    android:id="@+id/tv_semua2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/mainFontColor"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_semua1"
+                    app:layout_constraintTop_toBottomOf="@id/semua"
+                    tools:text="972364" />
+
+                <TextView
+                    android:id="@+id/tv_dari_semua2"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/mainFontColor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tv_dari_semua1"
+                    app:layout_constraintTop_toBottomOf="@id/tv_semua1"
+                    tools:text="@string/semua_dosis" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/delapanbelas"
+            app:cardCornerRadius="@dimen/delapanbelas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardView6">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/delapanbelas">
+
+                <TextView
+                    android:id="@+id/tenaga_kesehatan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="Vaksinasi Tenaga Kesehatan"
+                    android:textColor="@color/mainFontColor"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_tenaga_kesehatan1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/mainFontColor"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toStartOf="@id/tv_tenaga_kesehatan2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tenaga_kesehatan"
+                    tools:text="972364" />
+
+                <TextView
+                    android:id="@+id/tv_dari_tenaga_kesehatan1"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/mainFontColor"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_tenaga_kesehatan1"
+                    tools:text="@string/semua_dosis" />
+
+                <TextView
+                    android:id="@+id/tv_tenaga_kesehatan2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/mainFontColor"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_tenaga_kesehatan1"
+                    app:layout_constraintTop_toBottomOf="@id/tenaga_kesehatan"
+                    tools:text="972364" />
+
+                <TextView
+                    android:id="@+id/tv_dari_tenaga_kesehatan2"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/mainFontColor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tv_dari_tenaga_kesehatan1"
+                    app:layout_constraintTop_toBottomOf="@id/tv_tenaga_kesehatan1"
+                    tools:text="@string/semua_dosis" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/delapanbelas"
+            app:cardCornerRadius="@dimen/delapanbelas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardView7">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/delapanbelas">
+
+                <TextView
+                    android:id="@+id/petugas_publik"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="Vaksinasi Petugas Publik"
+                    android:textColor="@color/mainFontColor"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_petugas_publik1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/mainFontColor"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toStartOf="@id/tv_petugas_publik2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/petugas_publik"
+                    tools:text="972364" />
+
+                <TextView
+                    android:id="@+id/tv_dari_petugas_publik1"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/mainFontColor"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_petugas_publik1"
+                    tools:text="@string/semua_dosis" />
+
+                <TextView
+                    android:id="@+id/tv_petugas_publik2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/mainFontColor"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_petugas_publik1"
+                    app:layout_constraintTop_toBottomOf="@id/petugas_publik"
+                    tools:text="972364" />
+
+                <TextView
+                    android:id="@+id/tv_dari_petugas_publik2"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/mainFontColor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tv_dari_petugas_publik1"
+                    app:layout_constraintTop_toBottomOf="@id/tv_petugas_publik1"
+                    tools:text="@string/semua_dosis" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/delapanbelas"
+            app:cardCornerRadius="@dimen/delapanbelas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardView8">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/delapanbelas">
+
+                <TextView
+                    android:id="@+id/lansia"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="Vaksinasi Lansia"
+                    android:textColor="@color/mainFontColor"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_lansia1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/mainFontColor"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toStartOf="@id/tv_lansia2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lansia"
+                    tools:text="972364" />
+
+                <TextView
+                    android:id="@+id/tv_dari_lansia1"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/mainFontColor"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_lansia1"
+                    tools:text="@string/semua_dosis" />
+
+                <TextView
+                    android:id="@+id/tv_lansia2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/mainFontColor"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_lansia1"
+                    app:layout_constraintTop_toBottomOf="@id/lansia"
+                    tools:text="972364" />
+
+                <TextView
+                    android:id="@+id/tv_dari_lansia2"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/mainFontColor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tv_dari_lansia1"
+                    app:layout_constraintTop_toBottomOf="@id/tv_lansia1"
+                    tools:text="@string/semua_dosis" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

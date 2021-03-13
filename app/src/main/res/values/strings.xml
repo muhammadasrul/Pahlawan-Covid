@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Pahlawan Covid</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="full_name">Nama Lengkap</string>
+    <string name="phone_number">Nomor Telepon</string>
+    <string name="start_assesment">Mulai Asesmen</string>
+    <string name="assesment">Mulai asesmen sekarang!</string>
+    <string name="assesment_desc">Mulai asesmen untuk mengetahui kondisi sekarang</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="vaccine">Vaccine</string>
+    <string name="news">News</string>
+    <string name="profile">Profile</string>
+    <string name="status_terakhir">Asesmen terakhir: %s</string>
+    <string name="belum_asesmen">Belum melakukan asesmen!</string>
+    <string name="covid_indonesia">Covid-19 di Indonesia</string>
+    <string name="lihat_detail">Lihat detail</string>
+    <string name="resiko_kecil">Resiko kamu terpapar Covid-19 rendah.\nWalaupun beresiko rendah, ada beberapa hal yang harus Anda perhatikan:\n \nLakukan tindakan pencagahan\nHindari bepergian, #DiraumahAja\nPahami lebih lanjut mengenai Covid-19</string>
+    <string name="resiko_sedang">Kamu berkemungkinan atau rentan terpapar Covid-19\nBeberapa hal yang harus Anda perhatikan:\n \nLakukan tindakan pencagahan\n#DiraumahAja atau karantina mandiri minimal selama 14 hari\nApabila mengalami gejala demam, batuk, nyeri tenggorokan/napas pendek/sulit bernapas secara bersamaan segera hubungi dokter atau hotline covid-19</string>
+    <string name="resiko_besar">Kamu berkemungkinan atau beresiko terpapar Covid-19\nJangan panik, segera hubungi dokter atau Hotline Covid-19 untuk mengkonfirmasi dan perhatikan beberapa hal berikut:\n \nHindar bepergian ke luar rumah hingga arahan lebih lanjut dari petugas kesehatan\nSelalu lakukan tindakan pencegahan penyebaran\nGunakan masker setiap saat dan dimana saja</string>
+    <string name="price">Rp %s</string>
+
+    <string name="internet_title">Internet Banking</string>
+    <string name="mobile_title">Mobile Banking</string>
+    <string name="atm_title">ATM</string>
+
+    <string name="internet">1. Masukkan User ID dan Password\n \n2. Pilih menu Pembayaran\n \n3. Pilih menu BRIVA\n \n4. Pilih akun untuk membayar\n \n5. Masukkan nomor BRI Virtual Account kamu\n(Contoh: 225224-xxxxxxx)\n \n6. Masukkan nominal yang akan dibayarkan\n \n7. Masukkan password dan Mtoken</string>
+    <string name="mobile">1. Login pada Mobile Banking\n \n2. Pilih menu Pembayaran\n \n3. Pilih menu BRIVA\n \n4. Masukkan nomor BRI Virtual Account dan jumlah yang dibayarkan\n \n5. Masukkan nomor pin kamu\n \n6. Tekan OK untuk melanjutkan transaksi\n \n7. Transaksi telah selesai\n \n8. Akan ada sms komfirmasi ke ponsel kamu</string>
+    <string name="atm">1. Pilih menu Transaksi Lainnya\n \n2. Kemudian pilih Lainnya\n \n3. Kemudian pilih menu Pembayaran\n \n4. Tekan pada pilihan menu BRIVA\n \n5. Masukkan nomor BRI Virtual Account kamu\n(Contoh: 225224-xxxxxxx)\n \n6. Pada konfirmasi pembayaran, tekan YES jika semua sudah sesuai\n \n7. Transaksi telah selesai</string>
+    <string name="assessment">Untuk mendeteksi indikasi gejala Covid-19, silahkan jawab pertanyaan singkat di bawah ini dengan jujur!</string>
+    <string name="pembaruan_terhakhir">Pembaruan terhakhir: %s</string>
+    <string name="semua_dosis">dosis dari %s telah diberikan</string>
+    <string name="vaksinasi_banner">Daftar vaksinasi sekarang!</string>
+    <string name="vaksinasi_desc">Wujudkan masyarakat yang sehat dengan vaksinasi</string>
+    <string name="daftar_vaksinasi">Daftar vaksinasi</string>
+    <string name="progress_vaksinasi">Progress Vaksinasi</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="about_developer">About Developer</string>
+    <string name="logout">Logout</string>
+    <string name="version">v 1.0.0</string>
+    <string name="nik">NIK</string>
+    <string name="birthday">Tanggal Lahir</string>
+    <string name="save">Simpan</string>
+    <string name="re_password">Re-password</string>
+
+    <string-array name="gender_list">
+        <item>Jenis Kelamin</item>
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+</resources>
